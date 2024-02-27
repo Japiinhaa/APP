@@ -1,10 +1,10 @@
 import { View } from "react-native";
-import Recu from "./screens/Recu";
+import Inventario from "./screens/Inventarios";
 
 function App() {  
   return (
     <View>
-      <Recu />
+      <Inventario />
     </View>
   );
 }
