@@ -1,10 +1,11 @@
 import { View } from "react-native";
-import Cadastro from "./screens/Cadastro";
+import Additens from "./screens/AddItens";
+import Inventarios from "./screens/Inventarios";
 
 function App() {  
   return (
     <View>
-      <Cadastro />
+      <Inventarios />
     </View>
   );
 }

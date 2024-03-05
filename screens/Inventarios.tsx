@@ -1,6 +1,7 @@
 import React from "react";
 import { View, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import Itens from "../components/Itens"
+import Bottom from "../components/Bottom"
 import { AntDesign,FontAwesome5, FontAwesome6, Entypo, Foundation} from '@expo/vector-icons';
 
 const itens = () => {
@@ -35,9 +36,8 @@ const itens = () => {
             <View style={styles.addButtonContainer}>
                 <AntDesign name="pluscircle" size={50} color="red" />
             </View>
-            <View style={styles.display}>
-                <FontAwesome5 name="list-ol" size={24} color="#ffffff" />
-                <FontAwesome6 name="camera-rotate" size={24} color="#ffffff" />
+            <View>
+                <Bottom color="red" colorincons="ffff" bottom={-370}/>
             </View>
         </View>
     );
@@ -52,17 +52,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
     },
-display: {
-    position: "absolute",
-    bottom: 0,
-    width: "100%",
-    height: 60,
-    flexDirection: "row",
-    justifyContent: "center",
-    gap: 20,
-    alignItems: "center",
-    backgroundColor: "#ff0000",
-},
+
 addButtonContainer: {
     position: "absolute",
     bottom: 20,
