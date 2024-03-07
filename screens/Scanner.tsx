@@ -12,17 +12,20 @@ export default function Scanner() {
         displaycode: {
             justifyContent: "center",
             alignItems: "center",
-            marginTop: 150,
+            marginTop: -20,
+            paddingTop: 150,
+            paddingBottom: 50,
+            backgroundColor: "#fbfbfb",
         },
     });
 
     return(
 <View>
-    <Header text="Cadastro de itens" color="red" colortxt="white" icon1="arrowleft" icon2="pluscircleo"/>
+    <Header text="Scanner" color="red" colortxt="white" icon1="arrowleft" icon2="pluscircleo"/>
     <View style={styles.displaycode}>
         <MaterialIcons name="qr-code-scanner" size={300} color="#5d5c5c" />
     </View>
-        <Bottom color="#ffff" colorincons="#595959" bottom={-260}/>
+        <Bottom color="#ffff" coloricons="#595959" bottom={-230}/>
     </View>
 );
 } 

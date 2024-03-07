@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { AntDesign, FontAwesome5, FontAwesome6 } from '@expo/vector-icons';
-            const Bottom = ({color, colorincons, bottom}) => {
+            const Bottom = ({color, coloricons, bottom}) => {
                 const styles = StyleSheet.create({
 display: {
     position: "absolute",
@@ -20,8 +20,8 @@ display: {
                 return (
                     <View>
                         <View style={styles.display}>
-                            <FontAwesome6 name="camera-rotate" size={24} color={colorincons} />
-                            <FontAwesome5 name="list-ol" size={24} color={colorincons} />
+                            <FontAwesome6 name="camera-rotate" size={24} color={coloricons} />
+                            <FontAwesome5 name="list-ol" size={24} color={coloricons} />
                         </View>
                     </View>
                 );
