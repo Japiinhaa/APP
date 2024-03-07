@@ -21,12 +21,12 @@ function cadastro () {
             <Logo text="Cadastre-se" color="red" />
         </View>
         <View>
-            <Input label="Nome" placeholder="Digite seu nome" hideText={false} />
-            <Input label="Sobrenome" placeholder="Digite seu Sobrenome" hideText={false} />
-            <Input label="Email" placeholder="Digite seu Email" hideText={false} />
-            <Input label="Telefone" placeholder="Digite seu Telefone" hideText={false} />
-            <Input label="Senha" placeholder="Digite sua Senha" hideText={true} />
-            <Input label="Confirme sua Senha" placeholder="Confirme sua Senha" hideText={false} />
+            <Input label="Nome" placeholder="Digite seu nome" secureTextEntry={false} />
+            <Input label="Sobrenome" placeholder="Digite seu Sobrenome" secureTextEntry={false} />
+            <Input label="Email" placeholder="Digite seu Email" secureTextEntry={false} />
+            <Input label="Telefone" placeholder="Digite seu Telefone" secureTextEntry={false} />
+            <Input label="Senha" placeholder="Digite sua Senha" secureTextEntry={true} />
+            <Input label="Confirme sua Senha" placeholder="Confirme sua Senha" secureTextEntry={false}   />
             <Botao text="Cadastrar" color="black" />
 
         </View>

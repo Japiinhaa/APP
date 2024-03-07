@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 
 
-export default function InventoryInput({label}) {
+export default function Inputcad({label}) {
     const [hover, sethover] = React.useState('black');
     const styles = StyleSheet.create({
     inventoryInput: {
@@ -34,6 +34,7 @@ export default function InventoryInput({label}) {
     return (
         <View style={styles.inventoryInput}>
             <TextInput style={styles.input} 
+            
             onFocus={() => sethover("#f39200")}
             onBlur={() => sethover("black")}/>
             <Text style={[styles.label,]}>{label}</Text>

@@ -37,7 +37,7 @@ const itens = () => {
                 <AntDesign name="pluscircle" size={50} color="red" />
             </View>
             <View>
-                <Bottom color="red" colorincons="ffff" bottom={-370}/>
+                <Bottom color="red" colorincons="#ffff" bottom={-370}/>
             </View>
         </View>
     );
