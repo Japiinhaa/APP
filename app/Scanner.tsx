@@ -25,7 +25,7 @@ export default function Scanner() {
     <View style={styles.displaycode}>
         <MaterialIcons name="qr-code-scanner" size={300} color="#5d5c5c" />
     </View>
-        <Bottom color="#ffff" coloricons="#595959" bottom={-230}/>
+        <Bottom color="#ffff" coloricons="#595959" bottom={-230} position='fixed'/>
     </View>
 );
 } 

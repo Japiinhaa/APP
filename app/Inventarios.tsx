@@ -1,8 +1,9 @@
 import React from "react";
-import { View, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
+import { Text,View, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import Itens from "../components/Itens"
 import Bottom from "../components/Bottom"
 import { AntDesign,FontAwesome5, FontAwesome6, Entypo, Foundation} from '@expo/vector-icons';
+import { Link } from "expo-router";
 
 const itens = () => {
     return (
@@ -10,6 +11,9 @@ const itens = () => {
         <ScrollView>
             <View style={styles.displaytop}>
                 <Foundation name="list" size={24} color="#595959" />
+                <Text>
+                    Lista
+                </Text>
                 <TouchableOpacity>
                     <Entypo name="magnifying-glass" size={24} color="#595959" />
                 </TouchableOpacity>
@@ -34,10 +38,12 @@ const itens = () => {
             </View>
         </ScrollView>
             <View style={styles.addButtonContainer}>
-                <AntDesign name="pluscircle" size={50} color="red" />
+                <Link href="/AddItens">
+                    <AntDesign name="pluscircle" size={50} color="red" />
+                </Link>
             </View>
             <View>
-                <Bottom color="red" coloricons="#ffff" bottom={-370}/>
+                <Bottom color="red" coloricons="#ffff" bottom={0} position='fixed'/>
             </View>
         </View>
     );
@@ -46,9 +52,7 @@ const itens = () => {
 const styles = StyleSheet.create({
     displaytop:{
         padding: 20,
-        marginTop: 40,
         width: "100%",
-        height: 120,
         flexDirection: "row",
         justifyContent: "space-between",
     },

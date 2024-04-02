@@ -4,6 +4,7 @@ import { StyleSheet } from "react-native";
 import Logo from "../components/Logo";
 import Input from "../components/Input";
 import Botao from "../components/Botao";
+import { Link } from "expo-router";
 
 function Recu() {
 
@@ -23,8 +24,10 @@ function Recu() {
             <StatusBar style="auto" />
             <Logo text="Recuperação de Senha" color="#011E83" />
             <Text style={styles.text}>Insira seu e-mail para recuperar a senha!</Text>
-            <Input label="Email:" placeholder="Insira seu e-mail:" hideText={false} />
-            <Botao text="Enviar" color="#101010" />
+            <Input label="Email:" placeholder="Insira seu e-mail:" secureTextEntry={false} />
+            <Link href="/Login" asChild>
+                <Botao text="Enviar" color="#101010" />
+            </Link>
         </View>
     );
 }

@@ -19,8 +19,10 @@ export default Itens;
 
 const styles = StyleSheet.create({
     display: {
+        borderTopColor: '#f5f5f5',
+        borderTopWidth: 2,
         borderBottomColor: '#f5f5f5',
-        borderBottomWidth: 2,
+        borderBottomWidth: 1,
     },
     text : {
         fontSize: 20,
