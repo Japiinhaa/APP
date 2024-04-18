@@ -1,23 +1,31 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import Header from "../components/Header";
-import Inputcad from "../components/Inputcad";
-import Bottom from "../components/Bottom";
-import { Link } from 'expo-router';
-
+import { View, Text, StyleSheet,useColorScheme } from "react-native";
+import Header from "../components/header";
+import InventoryInput from "../components/invinput";
+import Bottom from "../components/bottom";
+import { AntDesign } from '@expo/vector-icons';
+import useTheme from "../temas/Temas";
 export default function AddItens() {
-    return(
+    const cores = useTheme();
+        const styles = StyleSheet.create({
+    paddingtop: {
+        paddingTop: 60,
+    }});
 
+    return (
+        <View style={{
+            backgroundColor: cores.bgPrimary,
+            height: "100%",
+        }}>
 <View>
-        <Header text="Cadastro de itens" color="red" colortxt="white" icon1="arrowleft" icon2="pluscircleo"/>
-    <View>
-        <Inputcad label="N° inventario * " />
-        <Inputcad label="Descrição * " />
-        <Inputcad label="Local * " />
-        <Inputcad label="Responsável * " />
-        <Inputcad label="Data de registro * " />
+    <View style={styles.paddingtop}>
+    <InventoryInput label='N inventario'/>
+    <InventoryInput label='Descrição' />
+    <InventoryInput label='Local'/>
+    <InventoryInput label='Responsavel'/>
+    <InventoryInput label='Data de registro'/>
     </View>
-        <Bottom color="#ffff" coloricons="#595959" bottom={-370} position='fixed'/>
     </View>
-);
+</View>
+    );
 } 
