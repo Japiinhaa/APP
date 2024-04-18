@@ -7,7 +7,7 @@ interface InputFieldProps extends TextInputProps{
 }
 
 
-export default function InputField({ label, placeholder, secureTextEntry }: InputFieldProps)  {
+export default function Input({ label, placeholder, secureTextEntry }: InputFieldProps)  {
   const [hover, sethover] = React.useState('#f5f5f5');
   const cores = useTheme();
   const styles = StyleSheet.create({

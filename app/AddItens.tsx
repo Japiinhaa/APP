@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet,useColorScheme } from "react-native";
-import Header from "../components/header";
-import InventoryInput from "../components/invinput";
-import Bottom from "../components/bottom";
+import Header from "../components/Header";
+import Inputcad from "../components/Inputcad";
+import Bottom from "../components/Bottom";
 import { AntDesign } from '@expo/vector-icons';
 import useTheme from "../temas/Temas";
 export default function AddItens() {
@@ -19,11 +19,11 @@ export default function AddItens() {
         }}>
 <View>
     <View style={styles.paddingtop}>
-    <InventoryInput label='N inventario'/>
-    <InventoryInput label='Descrição' />
-    <InventoryInput label='Local'/>
-    <InventoryInput label='Responsavel'/>
-    <InventoryInput label='Data de registro'/>
+    <Inputcad label='N inventario'/>
+    <Inputcad label='Descrição' />
+    <Inputcad label='Local'/>
+    <Inputcad label='Responsavel'/>
+    <Inputcad label='Data de registro'/>
     </View>
     </View>
 </View>

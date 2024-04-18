@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity} from "react-native";
 import Logo from "../components/Logo";
-import InputField from "../components/Input";
+import Input from "../components/Input";
 import Botao from "../components/Botao";
 import { Link } from "expo-router";
 import useTheme from "../temas/Temas";
@@ -25,8 +25,8 @@ function login() {
       <View>
         <Text style={styles.text}>Faça Login Para Acessar o Sistema!</Text>
 
-        <InputField label="Email:" placeholder="Digite Email" secureTextEntry={false} />
-        <InputField label="Senha:" placeholder="Digite sua Senha" secureTextEntry={true} />
+        <Input label="Email:" placeholder="Digite Email" secureTextEntry={false} />
+        <Input label="Senha:" placeholder="Digite sua Senha" secureTextEntry={true} />
         <Link href="./drawer/home/index" asChild>
           <Botao text="Entrar" color={cores.bgSecondary} href="./drawer/home/itens"/>
         </Link>
