@@ -1,36 +1,42 @@
-import { Text, View } from "react-native";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet } from "react-native";
+import React from "react";
 import Logo from "../components/Logo";
-import Input from "../components/Input";
+import InputField from "../components/Input";
 import Botao from "../components/Botao";
-import { Link } from "expo-router";
+import { Image, Text, View, StyleSheet, StatusBar, useColorScheme } from "react-native";
+import useTheme from "../temas/Temas";
 
-function Recu() {
 
+function Recuperar(){
+    const cores = useTheme();
+    const Theme = useColorScheme();
+    const backgroundColor = Theme === 'dark' ? cores.bgPrimary : '#011E83';
+    const corbotoes = Theme === 'dark' ? cores.bgSecondary : '#000000';
     const styles = StyleSheet.create({
-        text : {
-            fontSize: 16,
-            color: 'black',
-            alignContent: 'center',
-            textAlign: 'center',
-            marginBottom: 20,
-            fontWeight: 'bold', 
-        },
-    });
+    text : {
+        fontSize: 20,
+        fontWeight: '500',
+        color: cores.textColor,
+        alignContent: 'center',
+        textAlign: 'center',
+        marginBottom: 20,
+    },
+});
+    return(
+    <>
+    <StatusBar backgroundColor={cores.bgPrimaryVariant} barStyle="light-content" />
+    <View style={{
+        backgroundColor: cores.bgPrimary,
+        height: '100%',
+    
+    }}>
+    <View>
+    <Logo text="Recuperção de Senha" color={backgroundColor} />
+    </View>
+    <Text style={styles.text}>Insira seu e-mail para recuperar a senha!</Text>
+    <InputField  label="Email:" placeholder="Digite seu Email" secureTextEntry={false}/>
+    <Botao text="Recuperar " color={corbotoes} href="/index" />
+    </View>
+    </>
+)}
 
-    return (
-        <View>
-            <StatusBar style="auto" />
-            <Logo text="Recuperação de Senha" color="#011E83" />
-            <Text style={styles.text}>Insira seu e-mail para recuperar a senha!</Text>
-            <Input label="Email:" placeholder="Insira seu e-mail:" secureTextEntry={false} />
-            <Link href="/Login" asChild>
-                <Botao text="Enviar" color="#101010" />
-            </Link>
-        </View>
-    );
-}
-
-
-export default Recu;
+export default Recuperar;
