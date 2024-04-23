@@ -17,15 +17,15 @@ export default function Scanner() {
         },
     });
 
-        return(
-        <>
-        <StatusBar backgroundColor={cores.bgprimaryvariant} barStyle="light-content" />
-        <View style={styles.displaycode}>
-            <StatusBar backgroundColor={cores.bgPrimary} barStyle="light-content" />
-            <MaterialIcons name="qr-code-scanner" size={300} color={cores.textColor} />
-        </View>
-        </>
+            return(
+            <>
+            <StatusBar backgroundColor={cores.bgPrimaryVariant} barStyle="light-content" />
+            <View style={styles.displaycode}>
+                <StatusBar backgroundColor={cores.bgPrimary} barStyle="light-content" />
+                <MaterialIcons name="qr-code-scanner" size={300} color={cores.textColor} />
+            </View>
+            </>
 
 
-    );
+        );
 } 

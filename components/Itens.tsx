@@ -14,7 +14,7 @@ const Itens = ({id, item, href}: ItensProps) => {
     const cores = useTheme();
     const styles = StyleSheet.create({
     display: {
-        borderBottomColor: cores.bgprimaryvariant,
+        borderBottomColor: cores.bgPrimaryVariant,
         borderBottomWidth: 2,
     },
     text : {
