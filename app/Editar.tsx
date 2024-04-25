@@ -1,18 +1,26 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, StatusBar } from "react-native";
 import Header from "../components/Header";
 import InventoryInput from "../components/Inputcad";
 import Bottom from "../components/Bottom";
+import useTheme from "../temas/Temas";
+
 export default function AddItens() {
+    const cores = useTheme();
         const styles = StyleSheet.create({
     paddingtop: {
         paddingTop: 60,
     }});
 
     return (
-        <View>
+        <View style={
+            {
+                backgroundColor: cores.bgPrimary,
+                height: '100%',
+            }
+        }>
+        <StatusBar backgroundColor={cores.bgPrimaryVariant} barStyle="light-content" />
 <View>
-    <Header cor="#ff0000" texto="Adicionar Itens" />
     <View style={styles.paddingtop}>
     <InventoryInput label='N inventario'/>
     <InventoryInput label='Descrição' />
@@ -20,7 +28,6 @@ export default function AddItens() {
     <InventoryInput label='Responsavel'/>
     <InventoryInput label='Data de registro'/>
     </View>
-    <Bottom color="ffff" coloricons= "#595959" bottom={0} position="fixed" />
     </View>
 </View>
     );

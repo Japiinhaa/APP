@@ -19,22 +19,22 @@ const itens = () => {
                 </TouchableOpacity>
             </View>
             <View>
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
-                <Itens id="956389" item="CADEIRA SENAI" />
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
+                <Itens id="956389" item="CADEIRA SENAI" href="/AddItens"/>
             </View>
         </ScrollView>
             <View style={styles.addButtonContainer}>

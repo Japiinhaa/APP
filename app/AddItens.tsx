@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet,useColorScheme } from "react-native";
+import { View, Text, StyleSheet,useColorScheme, StatusBar } from "react-native";
 import Header from "../components/Header";
-import Inputcad from "../components/Inputcad";
+import InventoryInput from "../components/Inputcad";
 import Bottom from "../components/Bottom";
 import { AntDesign } from '@expo/vector-icons';
 import useTheme from "../temas/Temas";
@@ -13,17 +13,19 @@ export default function AddItens() {
     }});
 
     return (
+        
         <View style={{
             backgroundColor: cores.bgPrimary,
             height: "100%",
         }}>
+        <StatusBar backgroundColor={cores.bgPrimaryVariant} barStyle="light-content" />
 <View>
     <View style={styles.paddingtop}>
-    <Inputcad label='N inventario'/>
-    <Inputcad label='Descrição' />
-    <Inputcad label='Local'/>
-    <Inputcad label='Responsavel'/>
-    <Inputcad label='Data de registro'/>
+    <InventoryInput label='N inventario'/>
+    <InventoryInput label='Descrição' />
+    <InventoryInput label='Local'/>
+    <InventoryInput label='Responsavel'/>
+    <InventoryInput label='Data de registro'/>
     </View>
     </View>
 </View>
